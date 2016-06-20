@@ -9,7 +9,7 @@ class LaunchBrowser(unittest.TestCase):
 
     def testBBSportWebsite(self):
         self.driver.set_window_size(1024,720)
-        self.driver.get("https://www.bbc.co.uk/sport")
+        self.driver.get("https://www.bbc.co.uk")
         import time
         time.sleep(3)
         self.driver.find_element_by_xpath('//nav//a[@class="primary-nav__link" and @href="/sport/football"]').click()
